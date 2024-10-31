@@ -1,0 +1,51 @@
+.title
+	font-size: 30px
+	font-weight: normal
+	margin-top: 0
+.problem
+	padding: 120px 0 54px 0px
+	background-color: #fff
+	color: #353438
+	font-size: 16px
+	line-height: 1.4
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__description
+		padding-left: 60px
+		max-width: 510px
+	&__title
+		margin-bottom: 40px
+	&__text
+		font-family: "Roboto-Light"
+		display: block
+		margin-top: 20px
+
+@media (max-width: 1080px)
+	.title
+		font-size: 20px
+		margin-bottom: 23px
+	.problem
+		padding: 120px 0 84px 0px
+		&-block
+			flex-direction: column-reverse
+		&__description
+			padding-left: 0px
+			text-align: center
+			max-width: 500px
+		&__image
+			margin-bottom: 75px
+@media (max-width: 680px)
+	.problem
+		font-size: 14px
+		&-block
+			flex-direction: column
+		&__description
+			text-align: left
+			margin-bottom: 112px
+			max-width: 270px
+		&__img
+			max-width: 252px
+		&__image
+			margin-bottom: 0

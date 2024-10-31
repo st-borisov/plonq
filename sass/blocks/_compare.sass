@@ -1,0 +1,72 @@
+.compare
+	padding: 25px 0 60px 0px
+	background-color: #fff
+	color: #353438
+	font-size: 14px
+	line-height: 1.4
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__title
+		margin-bottom: 49px
+	&__image
+		padding-left: 60px
+	&__group
+		display: flex
+		align-items: center
+		margin-bottom: 35px
+		&:last-child
+			margin-bottom: 50px
+	&__rect
+		width: 20px
+		height: 20px
+		border-radius: 50%
+		margin-right: 30px
+		&-1
+			background-color: #bead80
+		&-2
+			background-color: #1bb48c
+			margin-bottom: 5px
+		&-3
+			background-color: #03a9f4
+	&__text
+		font-family: "Roboto-Light"
+		display: inline-block
+		max-width: 335px
+	&__link
+		display: block
+		border: 1px solid #000
+		border-radius: 25px
+		max-width: 336px
+		width: 100%
+		background-color: #fff
+		cursor: pointer
+		color: #000
+		text-align: center
+		padding: 9px 0
+		&:hover
+			color: #fff
+			background-color: #000
+			transition: 0.2s
+
+@media (max-width: 1080px)
+	.compare
+		&-block
+			flex-direction: column
+		&__image
+			padding-left: 0px
+			margin-bottom: 65px
+		&__text
+			max-width: 258px
+@media (max-width: 680px)
+	.compare
+		padding: 25px 0 75px 0px
+		font-size: 12px
+		&__img
+			max-width: 296px
+		&__image
+			margin-bottom: 24px
+		&__link
+			max-width: 295px
+			font-size: 14px

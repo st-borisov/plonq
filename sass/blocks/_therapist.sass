@@ -1,0 +1,46 @@
+.therapist
+	padding: 70px 0 60px 0
+	color: #353438
+	font-size: 16px
+	line-height: 1.4
+	background-color: #f4f3f1
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__title
+		margin-bottom: 41px
+		line-height: 1
+		max-width: 153px
+	&__description
+		padding-left: 60px
+	&__subtitle
+		display: block
+		max-width: 510px
+	&__text
+		max-width: 510px
+		margin-top: 20px
+		display: block
+		font-family: "Roboto-Light"
+
+@media (max-width: 1080px)
+	.therapist
+		&-block
+			flex-direction: column-reverse
+		&__description
+			padding-left: 0px
+			text-align: center
+		&__img
+			max-width: 266px
+			margin-bottom: 37px
+		&__title
+			max-width: 100%
+			font-size: 20px
+			margin-bottom: 23px
+		&__subtitle, &__text
+			font-size: 14px
+			max-width: 330px
+@media (max-width: 680px)
+	.therapist
+		&__subtitle, &__text
+			max-width: 270px

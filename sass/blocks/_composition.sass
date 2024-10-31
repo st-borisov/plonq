@@ -1,0 +1,65 @@
+.composition
+	padding: 80px 0 143px 78px
+	color: #353438
+	font-size: 16px
+	line-height: 1.4
+	background-color: #fff
+	&__title
+		font-size: 30px
+		font-weight: normal
+		margin-bottom: 60px
+		margin-top: 0
+	&__cards
+		display: flex
+		justify-content: space-between
+	&__card
+		width: 33%
+		display: flex
+		flex-direction: column
+	&__sub
+		margin-top: 0
+		font-size: 20px
+		color: #bead80
+		font-weight: normal
+		margin-bottom: 24px
+		max-width: 200px
+		&-2
+			margin-bottom: 48px
+	&__text
+		font-family: "Roboto-Light"
+		display: block
+		max-width: 310px
+
+@media (max-width: 1080px)
+	.composition
+		padding: 80px 0 143px 0
+		&__card
+			width: 30%
+@media (max-width: 790px)
+	.composition
+		padding: 80px 0 45px 0
+		&__cards
+			flex-direction: column
+		&__card
+			max-width: 270px
+			width: 100%
+			margin-bottom: 78px
+			&:last-child
+				margin-bottom: 0
+		&__sub
+			&-2
+				margin-bottom: 24px
+@media (max-width: 680px)
+	.composition
+		padding: 80px 0 90px 0
+		font-size: 12px
+		&__title
+			font-size: 18px
+			margin-bottom: 41px
+		&__sub
+			font-size: 12px
+			max-width: 270px
+			margin-bottom: 21px
+		&__card
+			max-width: 270px
+			margin-bottom: 36px

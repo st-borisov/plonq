@@ -1,0 +1,115 @@
+.plane-x
+    height: 100vh
+    &-block
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+    &-left
+        display: flex
+        flex-direction: column
+        padding-left: 77px
+        &__img
+            width: 260px
+            margin-bottom: 75px
+        &__title
+            display: block
+            font-family: "Roboto-Light"
+            font-weight: 300
+            font-size: 30px
+            color: #353438
+            max-width: 360px
+            margin-bottom: 71px
+        &__links
+            display: flex
+            align-items: center
+        &__link
+            font-family: "Roboto-Medium"
+            padding-right: 70px
+            color: #353438
+            background-image: url('../img/plane-x/Rectangle_825.svg')
+            background-position-y: 4.5px
+            background-position-x: 82px
+            background-repeat: no-repeat
+            transition: 0.2s
+            &:hover
+                background-position-x: 84px
+        &__info
+            display: block
+            color: #c1b186
+            font-family: "Roboto-Medium"
+    &-right
+        width: 390px
+        padding-right: 147px
+    
+@media (max-width: 1180px)
+    .plane-x
+        &-block
+            justify-content: space-around
+        &-right
+            width: 350px
+            padding-right: 0
+        &-left
+            padding-left: 0
+            &__img
+                width: 330px
+                margin-bottom: 50px
+            &__title
+               font-size: 25px
+               margin-bottom: 50px
+@media (max-width: 1080px)
+    .plane-x
+        &-left
+            &__img
+                width: 260px
+                margin-bottom: 40px
+            &__title
+               margin-bottom: 40px
+        &-right
+            width: 290px
+            padding-right: 0
+    
+@media (max-width: 790px)
+    .plane-x
+        &-block
+            flex-direction: column
+            position: relative
+        &-left
+            align-items: center
+            &__title
+                text-align: center
+                font-size: 30px
+            &__img
+                width: 200px
+                margin-bottom: 60px
+            &__links
+                display: flex
+                position: absolute
+                bottom: -90px
+                width: 320px
+                justify-content: space-between
+                z-index: 4
+        &-right
+            width: 320px
+        
+            
+
+@media (max-width: 680px)
+    .plane-x
+        &-left
+            &__title
+                margin: auto
+                font-size: 20px
+                max-width: 270px
+                margin-bottom: 60px
+            &__img
+                width: 102px
+                margin-bottom: 30px
+            &__links
+                position: absolute
+                margin: auto
+                width: 260px
+                justify-content: space-between
+        &-right
+            margin: auto
+            width: 242px

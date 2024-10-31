@@ -1,0 +1,217 @@
+.footer-mobile
+    display: none
+.footer
+    padding: 111px 0 63px
+    background-color: #ffffff
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        margin-bottom: 61px
+    &__logo
+        margin-right: 217px
+    &__left
+        display: flex
+        align-items: baseline
+    &-subscription
+        display: flex
+        flex-direction: column
+        &__title
+            display: block
+            margin-bottom: 32px
+            color: #2b2b2a
+            font-family: "Roboto-Medium"
+        &__block
+            display: flex
+        &__input
+            width: 292px 
+            padding: 10px 20px
+            outline: none
+            border-radius: 4px
+            color: #2b2b2a
+            background: #f8f8f8
+            border: none
+            font-size: 14px
+            font-family: "Roboto-Light"
+            margin-right: 20px
+        &__button
+            display: block
+            background-color: #2b2b2a
+            border-radius: 4px
+            width: 158px
+            padding: 10px 0
+            color: #ffffff
+            outline: none
+            text-align: center
+            border: none
+            cursor: pointer
+    &-language
+        display: flex
+        align-items: center
+        font-family: "Roboto-Medium"
+        color: #80807f
+        &__ru
+            display: block
+        &__line
+            display: block
+            width: 1px 
+            background-color: #80807f
+            height: 14px
+            margin: 0 10px 
+        &__en
+            display: block
+    &-bottom
+        display: flex
+        justify-content: space-between
+        margin-bottom: 45px
+        &__text
+            display: block
+            margin: auto
+            line-height: 1.55
+            max-width: 847px
+            text-align: center
+            font-size: 12px
+            color: #80807f
+            opacity: 0.9
+    &-bottom-left
+        display: flex
+        flex-direction: column
+        &__content
+            display: flex
+            font-size: 12px
+            margin-bottom: 34px
+        &__content-img
+            opacity: 0.6
+            margin-right: 21px
+        &__content-text-a
+            display: block
+            padding-top: 5px
+            font-family: "Roboto-Light"
+        &__content-text-b
+            display: block
+            font-family: "Roboto-Medium"
+            color: #80807f
+            padding-top: 2px
+    &-bottom-center
+        display: flex
+        max-width: 600px
+        width: 100%
+        justify-content: space-between
+        padding-right: 147px
+        &__title
+            display: block
+            margin-bottom: 30px
+            font-family: "Roboto-Medium"
+            color:#2b2b2a
+        &__column
+            display: flex
+            flex-direction: column
+            padding-right: 
+        &__link
+            display: block
+            margin-bottom: 20px
+            color: #80807f
+            font-size: 12px
+            line-height: 1.55
+    &-bottom-right
+        display: flex
+        flex-direction: column
+        &__instagram
+            margin-bottom: 32px
+            width: 21px
+            margin-left: 150px
+        &__text
+            display: block
+            color: #80807f
+            font-size: 12px
+            line-height: 1.55
+            text-align: right
+            max-width: 171px
+            width: 100%
+
+@media (max-width: 1420px)
+    .footer
+        &-bottom-center
+            padding-right: 45px
+        &__logo
+            margin-right: 167px
+
+@media (max-width: 1280px)
+    .footer
+        &-bottom-center
+            padding-right: 0
+            padding-left: 50px
+        &__logo
+            margin-right: 134px
+
+@media (max-width: 1180px)
+    .footer
+        padding: 100px 0 50px
+        &__logo
+            margin-right: 130px
+        &-bottom-center
+            max-width: 550px
+
+@media (max-width: 1080px)
+    .footer
+        display: none
+        &-bottom-center
+            padding-left: 0
+            max-width: 100%
+        &__top
+            margin-bottom: 50px
+        &-bottom
+            margin-top: 60px
+            margin-bottom: 0
+            &__text
+                margin-top: 20px
+        &-language
+            margin-top: 20px
+            justify-content: center
+    .footer-mobile
+        display: block
+        padding: 100px 0
+        background-color: #ffffff
+
+@media (max-width: 790px)
+    .footer
+        &-bottom-center
+            flex-wrap: wrap
+            padding-left: 0
+            max-width: 60%
+            &__column
+               width:  50%
+@media (max-width: 680px)
+    .footer
+        &-subscription
+            &__button
+                width: 119px
+            &__input
+                width: 140px 
+        &-bottom
+            flex-direction: column
+        &-bottom-center
+            max-width: 100%
+            &__column
+               width:  45%
+        &-bottom-left
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+        &-bottom-right
+            margin-top: 30px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            &__instagram
+                margin: 0
+            &__text
+                font-size: 10px
+        &-language
+            justify-content: flex-start
+        &-bottom__text
+            text-align: left
+    .footer-mobile
+        display: block
+        padding: 60px 0
+

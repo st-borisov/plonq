@@ -1,0 +1,109 @@
+.plonq400
+    background-color: #ffffff
+    position: relative
+    overflow: hidden
+    &-block
+        padding: 100px 0 100px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-left
+        padding-left: 53px
+        &__logo
+            width: 262px
+        &__text
+            display: block
+            font-family: "Roboto-Light"
+            font-size: 28px
+            line-height: 1.2
+            color: #353438
+            margin: 65px 0 
+        &__link
+            display: block
+            font-family: "Roboto-Medium"
+            background-image: url('../img/plane-x/Rectangle_825.svg')
+            background-position-y: 4.5px
+            background-position-x: 98%
+            background-repeat: no-repeat
+            width: 198px
+            color: #353438
+            transition: 0.4s
+            &:hover
+                background-position-x: 100%
+        &__img
+            width: 959px
+            margin-right: -111px
+        &__img-mobile
+            display: none
+
+@media (max-width: 1420px)      
+    .plonq400
+        &-block
+        &-left
+            &__img
+                width: 890px
+                margin-right: -111px
+
+@media (max-width: 1280px)
+    .plonq400
+        &-block
+        &-left
+            &__img
+                width: 790px
+                margin-right: 0px
+    
+@media (max-width: 1180px)
+    .plonq400
+        &-block
+            padding: 200px 0 100px
+            justify-content: space-around
+        &-left
+            padding-left: 0
+            &__img
+                width: 630px
+
+@media (max-width: 1080px)
+    .plonq400
+        &-block
+            padding: 150px 0 100px
+            justify-content: space-around
+        &-left
+            padding-left: 0
+            &__img
+                width: 450px
+                margin-right: -100px
+    
+@media (max-width: 790px)
+    .plonq400
+        &-block
+            padding: 150px 0 100px
+            flex-direction: column
+            align-items: center
+            position: relative
+        &-left
+            padding-left: 0
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__logo
+                margin: auto
+                width: 120px
+            &__img
+                width: 450px
+                margin: auto
+            &__text
+                font-size: 18px
+                margin: 0
+                margin-top: 30px
+                text-align: center
+            &__link
+                width: 160px
+                background-position-y: 2px
+                font-size: 12px
+                position: absolute
+                bottom: 50px
+            &__img
+                display: none
+            &__img-mobile
+                display: block
+                width: 508px

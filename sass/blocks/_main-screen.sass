@@ -1,0 +1,161 @@
+.main-screen
+    position: relative
+    overflow: hidden
+    background-image: url('../img/main-screen/background.webp')
+    background-position-x: center
+    background-size: cover
+    background-repeat: no-repeat
+    height: 110vh
+    no-repeat
+    &__background
+        width: 100%
+    &-block
+        top: 35%
+        position: absolute
+        margin-left: 75px
+        &__logo
+            position: relative
+            display: flex
+            align-items: center
+            margin-bottom: 85px
+        &__img-a
+            position: absolute
+            width: 44px
+            top: -20px
+            left: -45px
+        &__img-b
+            margin-right: 15px
+        &__img-c
+            width: 83px
+        &__text
+            display: block
+            font-family: "Roboto-Light"
+            font-size: 30px
+            color: #ffffff
+            line-height: 1.05
+            margin-bottom: 70px
+        &__links
+            display: flex
+            align-items: center
+        &__link-a
+            width: 98px
+            display: block
+            font-family: "Roboto-Medium"
+            background-image: url('../img/main-screen/arrow-white.svg')
+            background-position-y: 4.5px
+            background-position-x: 98%
+            background-repeat: no-repeat
+            width: 98px
+            color: #ffffff
+            transition: 0.4s
+            margin-right: 70px
+            &:hover
+                background-position-x: 100%
+        &__link-b
+            border: 1px solid #ffffff
+            display: block
+            width: 137px
+            padding: 10px 0
+            text-align: center
+            color: #ffffff
+            border-radius: 45px
+            transition: 0.4s
+            &:hover
+                background-color: #ffffff
+                color: #000000
+@media (max-width: 1600px)
+    .main-screen
+@media (max-width: 1420px)
+    .main-screen
+        &-block
+            top: 33%
+            &__logo
+                margin-bottom: 60px
+        
+    
+@media (max-width: 1280px)
+    .main-screen
+        &-block
+            top: 29%
+            &__logo
+                margin-bottom: 60px
+        &__background
+            width: 115%
+    
+@media (max-width: 1180px)
+    .main-screen
+        background-image: url('../img/main-screen/background.webp')
+        background-size: cover
+        background-repeat: no-repeat
+        &-block
+            top: 30%
+            &__logo
+                margin-bottom: 60px
+        &__background
+            width: 120%
+    
+@media (max-width: 1080px)
+    .main-screen
+        background-image: url('../img/main-screen/mob_baner.webp')
+        background-position-x: center
+        padding-bottom: 200px
+        &-block
+            top: 17%
+            margin: auto
+            right: 0
+            left: 0
+            width: 350px
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__text
+                text-align: center
+                font-size: 32px
+            &__logo
+                width: 280px
+                margin-bottom: 50px
+            &__links
+            &__link-a
+                color: #ffffff
+            &__link-b
+                color: #ffffff
+                border: 1px solid #ffffff
+            
+@media (max-width: 680px)
+    .main-screen
+        background-image: url('../img/main-screen/mob_baner.webp')
+        background-position-x: center
+        background-position-y: 30px
+        padding-bottom: 0
+        &-block
+            &__logo
+                width: 130px
+                margin-bottom: 30px
+            &__img-a
+                position: absolute
+                width: 25px
+                top: -5px
+                left: -28px
+            &__img-b
+                margin-right: 15px
+                width: 74px
+                margin-right: 9px
+            &__img-c
+                width: 37px
+            &__text
+                text-align: center
+                font-size: 20px
+                max-width: 
+                ine-height: 1.05
+                margin-bottom: 40px
+            &__links
+                justify-content: center
+            &__link-a
+                color: #ffffff
+                font-size: 12px
+                width: 85px
+                background-position-y: 2.5px
+                margin-right: 40px
+            &__link-b
+                color: #ffffff
+                border: 1px solid #ffffff
